@@ -1,0 +1,114 @@
+html{
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: inherit;
+}
+
+body{
+	max-width: 100%;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: @lora;
+	font-weight: 400;
+	font-size: 18px;
+	overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+
+.content-box{
+	box-sizing: content-box;
+}
+
+.hidden{
+	display: none;
+	translateY: -100% ;
+}
+.visually-hidden{
+	position: absolute;
+	width:1px;
+	height:1px;
+	margin:-1px;
+	padding:0;
+	border:0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+a{ 
+	text-decoration: none;
+	color: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+.section {
+	transform: skewY(-5deg);
+	
+}
+
+.container{
+	transform: skewY(5deg);
+
+	&--borderless{
+		width: 100%;
+	}
+}
+
+
+
+
+.section--gray{
+	background-color: @gray;
+}
+
+.preheader{
+	height: 250px;
+}
+
+main{
+	transform: translateY(-100px);
+}
+
+@media (min-width:@tablet)  {
+	.tadiusSapfiro{
+		padding-top: 170px;
+	}
+	.services{
+		justify-items: center;
+		justify-content: center;
+		grid-gap: 35px;
+		grid-template-rows: 100%;
+		grid-template-columns: auto auto auto auto;
+		padding: 35px 0;
+	}
+}
+
+
+@media (min-width:@desktop)  {
+	.container{
+		margin: 0 auto;
+		width: 1220px;
+	}
+	.services{
+		grid-gap: 40px;
+		font-size: 20px;
+	}
+}
+

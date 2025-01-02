@@ -29,7 +29,8 @@
 
 .services{
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-gap: 20px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
@@ -75,6 +76,15 @@
   .tadiusSapfiro{
     padding: 0 30px 110px;
   }
+
+  .services{
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 35px;
+    grid-template-rows: 100%;
+    grid-template-columns: auto auto auto auto;
+    padding: 35px 0;
+  }
 }
 
 
@@ -91,14 +101,7 @@
   .tadiusSapfiro{
     padding-bottom: 140px;
   }
-  .services{
-    justify-items: center;
-    justify-content: center;
-    grid-gap: 35px;
-    grid-template-rows: 100%;
-    grid-template-columns: auto auto auto auto;
-    padding: 35px 0;
-  }
+  
 }
 
 
